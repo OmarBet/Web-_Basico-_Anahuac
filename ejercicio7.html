@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio7, flexbox</title>
+    <style>
+    html {
+         box-sizing: border-box;
+     }
+        *, *:before, *:after {
+        box-sizing: inherit;
+     }
+
+
+        body{
+            color: rgb(255, 255, 255);
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        p{
+            padding: 1em;
+        }
+        
+        #container {
+            display: flex;
+            flex-wrap:wrap;
+            justify-content:space-evenly;
+            align-items:center;
+
+            width: 600px;
+            height: 600px;
+            background-color: rgb(247, 194, 129)
+        }
+        .caja{
+            width: auto;
+            height: 100px;
+        }
+        .box1{
+            background-color: aquamarine;
+            height: 150px;
+        }
+        .box2{
+            background-color: rgb(187, 127, 255);
+            height: 200px;
+        }
+        .box3{
+            background-color: rgb(163, 255, 127);
+            height: 100px;
+        }
+        .box4{
+            background-color: rgb(255, 210, 127);
+            height: 250px;
+        }
+        .box5{
+            background-color: rgb(255, 127, 180);
+            height: 120px;
+        }
+    
+        #container2 {
+            display: flex;
+            flex-wrap:wrap;
+            align-content: flex-end;
+            
+
+            width: 100vw;
+            height: 600px;
+            background-color: rgb(247, 172, 82)
+
+        }
+        .caja-a{  
+            flex-grow: 1; 
+        }
+        .box6{
+            background-color: aquamarine;
+            
+        }
+        .box7{
+            background-color: rgb(187, 127, 255);
+            
+        }
+        .box8{
+            background-color: rgb(163, 255, 127);
+            
+        }
+        .box9{
+            background-color: rgb(255, 210, 127);
+           
+        }
+        .box10{
+            background-color: rgb(255, 127, 180);
+            
+        }
+    
+    </style>
+
+
+
+</head>
+<body>
+    <div id="container">
+    <section class="box1 caja"><p>Caja 1</p></section>
+    <section class="box2 caja"><p>Caja 2</p></section>
+    <section class="box3 caja"><p>Caja 3</p></section>
+    <section class="box4 caja"><p>Caja 4</p></section>
+    <section class="box5 caja"><p>Caja 5</p></section>
+
+
+    </div>
+
+    <div id="container2">
+    <section class="box6 caja"><p>Caja 6 holaaa</p></section>
+    <section class="box7 caja"><p>Caja 7 adios</p></section>
+    <section class="box8 caja"><p>Caja 8 ffffff</p></section>
+    <section class="box9 caja"><p>Caja 9 laloli</p></section>
+    <section class="box10 caja"><p>Caja 10 hf</p></section>
+        
+        
+    </div>
+    
+</body>
+</html>
